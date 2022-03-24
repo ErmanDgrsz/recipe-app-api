@@ -12,7 +12,8 @@ class ModelTests(TestCase):
             password=password
         )
         self.assertEqual(user.email, email)
-        # You can't check the password with assertEqual method bc its encrypted.
+        # You can't check the password with assertEqual method
+        # bc its encrypted.
         # Use check password method
         self.assertTrue(user.check_password(password))
 
